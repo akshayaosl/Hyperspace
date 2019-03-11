@@ -1,0 +1,31 @@
+name: Hyperspace Theme
+description: Material Design
+type: theme
+core: 8.x
+basetheme: stable
+screenshot: screenshot.png
+
+regions:
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu '
+  breadcrumb: 'Breadcrumb'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  intro: 'Introduction'
+  content: 'Content'
+  sidebar_first: 'Left Sidebar'
+  sidebar_second: 'Right Sidebar'
+  section_one: 'Section one'
+  section_two: 'Section two'
+  section_three: 'Section three'
+  section_four: 'Section four'
+  place_one: 'Place one'
+  place_two: 'Place two'
+  place_three: 'Place three'
+  contact_form: 'Contact Form'
+  details: 'Details'
+  footer: 'Footer'
+
+libraries:
+  - hyperspace/global-style
