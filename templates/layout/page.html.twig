@@ -47,7 +47,7 @@
   <div class="grid-x">
     <div class="cell large-3">
       <header role="banner" class="strict">
-        {{ page.header }}
+        {{ page.sidebar_first }}
       </header>
     </div>
 
@@ -80,35 +80,30 @@
       </div>
     </div>
 
-    <div class="grid-x">
-      <div class="cell large-12">
-        {{ page.place_one }}
-      </div>
-      <div class="cell large-8">
-        {{ page.place_two }}
-      </div>
-      <div class="cell large-4">
-        {{ page.place_three }}
-      </div>
-    </div>
-
     <div class="grid-x contact">
       <div class="cell large-8">
         {{ page.contact_form }}
       </div>
-      <div class="cell large-4">
+      <div class="cell large-4 details">
         {{ page.details }}
       </div>
     </div>
     
   </main>
 
-  {% if page.footer %}
-    <footer role="contentinfo">
-      {{ page.footer }}
-    </footer>
-  {% endif %}
+    <div class="grid-x footer">
+      <div class="cell large-4 medium-4 small-4">
+        {{ page.footer_one }}
+      </div>
+      <div class="cell large-4 medium-4 small-4">
+        {{ page.footer_two }}
+      </div>
+      <div class="cell large-4 medium-4 small-4">
+        {{ page.footer_three }}
+      </div>
     </div>
+
+  </div>
 </div>
 
-</div>{# /.layout-container #}
+</div>

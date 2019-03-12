@@ -65,7 +65,7 @@ small, strike, strong, sub, sup, tt, var, b,
 u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption,
+canvas, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
   margin: 0;
@@ -73,9 +73,9 @@ section, summary, time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;}
+  }
 
-article, aside, details, figcaption, figure,
+article, aside, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;}
 
@@ -202,7 +202,6 @@ input, select, textarea {
     -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
     -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
     transition: color 0.2s ease, border-bottom-color 0.2s ease;
-    border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
     color: inherit;
     text-decoration: none;
   }
@@ -388,7 +387,7 @@ input, select, textarea {
   z-index: 999;
   height: 100vh;
   background-color: #312450;
-  padding: 8em 2em 0.5em 5em;
+  padding: 5em 2em 0.5em 5em;
 
 }
 
@@ -406,7 +405,6 @@ input, select, textarea {
   color: #ffffff;
   background-image: linear-gradient(to right, #5e42a6, #b74e91); 
 }
-
   @media screen and (max-width: 992px) {
   .strict {
     display: none;
@@ -440,14 +438,15 @@ input, select, textarea {
   background: #312450;
   color: #ffffff;
 }
-.teaser-image{
-  width: 336px;
-  height: 390px;
+.teaser-image img{
+  width: 100%;
+  height: 100%;
 }
+
   @media screen and (max-width: 992px) {
   .teaser-image{
-  width: 220px;
-  height: 200px;
+  width: 50%;
+  height: 50%;
   margin-left: auto;
   margin-right: auto;
   }  
@@ -455,14 +454,16 @@ input, select, textarea {
 
   @media screen and (max-width: 600px) {
   .teaser-image{
-  width: 200px;
-  height: 220px;
+  width: 50%;
+  height: 50%;
   margin-left: auto;
   margin-right: auto;
   }  
   }
 
-
+/*.teaser-title a{
+  color: ##1779ba;
+}*/
 .teaser-body{
   color: #ffffff;
   justify-content: center;
@@ -533,5 +534,48 @@ input, select, textarea {
 }
 
 .contact-title{
-  color: #b74f91;
+  color: #1779ba;
+}
+
+.details-body{
+  padding: 2em;
+}
+
+.footer{
+  padding-bottom: 5%;
+}
+.footer-one{
+  color: #1779ba;
+  font-size: small;
+}
+.footer-two{
+  color: #1779ba;
+  font-size: small;
+}
+.footer-three{
+  color: #1779ba;
+  font-size: small;
+}
+
+.read-button{
+    transition: border-color 0.2s ease;
+    background-color: transparent;
+    border: solid 1px !important;
+    border-radius: 3em;
+    color: #1779ba !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.6em;
+    font-weight: bold;
+    height: calc(4.75em + 2px);
+    letter-spacing: 0.10em;
+    line-height: 4.75em;
+    outline: 0;
+    padding: 0 3.75em;
+    margin-left: 2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
